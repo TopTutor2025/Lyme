@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primordium</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <div class="logo">
+        PRIMORDIUM
+      </div>
+
+      <nav class="nav-center">
+        <a href="#">Atelier</a>
+        <a href="#">Collezioni</a>
+        <a href="#">Club</a>
+      </nav>
+
+      <div class="nav-right">
+
+        <div class="instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+            <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0120 7.75v8.5A3.75 3.75 0 0116.25 20h-8.5A3.75 3.75 0 014 16.25v-8.5A3.75 3.75 0 017.75 4zm8.75 1.5a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+          </svg>
+        </div>
+
+        <button class="nav-btn">
+          PRE-ORDINA ORA
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-left">
+        <h1>
+          Luxury Tactical<br>
+          <span>Leather Jacket</span>
+        </h1>
+
+        <p>
+          Streetwear tattico Made in Italy.<br>
+          Protezione anti-taglio e design balistico.
+        </p>
+
+        <button class="cta">
+          Scopri la collezione
+        </button>
+      </div>
+
+
+
+      <div class="hero-right">
+
+        <div class="light"></div>
+
+        <div class="product">
+          <div class="jacket-3d" id="jacket3D">
+            <img src="img/jacket-back.png" class="layer back" alt="">
+            <img src="img/jacket-main.png" class="layer main" alt="Giacca Primordium">
+            <img src="img/jacket-front.png" class="layer front" alt="">
+          </div>
+        </div>
+
+        <div class="tech t1">
+          <div class="line"></div>
+          <p>Anti-Cut Fabric</p>
+        </div>
+
+        <div class="tech t2">
+          <div class="line"></div>
+          <p>Kevlar Layer</p>
+        </div>
+
+        <div class="tech t3">
+          <div class="line"></div>
+          <p>Italian Craftsmanship</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="products">
+    <div class="container">
+
+      <div class="products-header">
+        <p class="subtitle">
+          Tecnologia e design
+        </p>
+
+        <h2>
+          Una collezione unica
+        </h2>
+
+        <p class="description">
+          Capi tattici progettati per resistenza, protezione e stile.
+        </p>
+      </div>
+
+
+      <div class="products-grid">
+
+        <div class="product-card">
+          <h3>Tactical Jacket</h3>
+          <p>
+            Protezione anti-taglio e design urbano.
+          </p>
+          <img src="img/shirt.png" alt="Tactical Jacket">
+        </div>
+
+        <div class="product-card">
+          <h3>Ballistic Hoodie</h3>
+          <p>
+            Comfort e protezione per l'ambiente urbano.
+          </p>
+          <img src="img/felpa.png" alt="Ballistic Hoodie">
+        </div>
+
+        <div class="product-card">
+          <h3>Urban Tactical Vest</h3>
+          <p>
+            Resistenza e modularità avanzata.
+          </p>
+          <img src="img/jacket.png" alt="Urban Tactical Vest">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<section class="stats-section">
+  <div class="container stats-inner">
+
+    <p class="stats-kicker">
+      Fai parte della tavola anche tu
+    </p>
+
+    <h2 class="stats-title">
+      solo <span>1000</span> capi <span>limited</span>
+    </h2>
+
+    <p class="stats-text">
+      Sulla base della loro esperienza e delle recensioni, abbiamo creato
+      Primordium, una piattaforma visiva e un brand dal linguaggio deciso,
+      pensato per chi cerca estetica, tecnica e presenza in un unico sistema.
+    </p>
+
+  </div>
+</section>
+
+  <section class="video-section">
+    <div class="video-wrapper">
+
+      <video id="heroVideo" autoplay muted loop playsinline>
+        <source src="video/primordium.mp4" type="video/mp4">
+      </video>
+
+      <div class="video-overlay">
+        <button id="soundToggle" class="video-btn">▶</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="info-section">
+    <div class="container info-grid">
+
+      <div class="info-image">
+        <div class="circle-bg"></div>
+        <img src="img/bellerofonte.png" alt="Elemento visuale">
+      </div>
+
+      <div class="info-text">
+        <h2>
+          Dal complesso al semplice
+        </h2>
+
+        <p class="info-description">
+          Tecnologia e design pensati per offrire protezione,
+          comfort e prestazioni nel contesto urbano moderno.
+        </p>
+
+        <div class="info-points">
+
+          <div class="point">
+            <span class="dot"></span>
+            <div>
+              <h4>Protezione stratificata</h4>
+              <p>
+                Materiali tecnici progettati per resistere a tagli e abrasioni.
+              </p>
+            </div>
+          </div>
+
+          <div class="point">
+            <span class="dot"></span>
+            <div>
+              <h4>Design modulare</h4>
+              <p>
+                Ogni capo è progettato per adattarsi a diverse situazioni urbane.
+              </p>
+            </div>
+          </div>
+
+          <div class="point">
+            <span class="dot"></span>
+            <div>
+              <h4>Comfort avanzato</h4>
+              <p>
+                Vestibilità ergonomica e materiali traspiranti.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="reels">
+
+<div class="container">
+
+<div class="reels-header">
+
+<h2>
+Operative urban
+</h2>
+
+<p>
+contenuti, dettagli e identità del brand
+</p>
+
+</div>
+
+
+<div class="reels-grid">
+
+<a href="#" class="reel-card">
+<img src="img/reel1.jpg">
+<div class="play"></div>
+</a>
+
+<a href="#" class="reel-card">
+<img src="img/reel2.jpg">
+<div class="play"></div>
+</a>
+
+<a href="#" class="reel-card">
+<img src="img/reel3.jpg">
+<div class="play"></div>
+</a>
+
+<a href="#" class="reel-card">
+<img src="img/reel4.jpg">
+<div class="play"></div>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container footer-inner">
+
+<a href="#">Termini e condizioni</a>
+<a href="#">Politica sulla riservatezza</a>
+<a href="#">Contatti</a>
+<a href="#">Impostazioni dei cookie</a>
+
+<p class="copyright">Primordium © 2026. Tutti i diritti riservati.</p>
+
+</div>
+
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
